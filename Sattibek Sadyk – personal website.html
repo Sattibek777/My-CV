@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sattibek Sadyk – Geography student, UNT tutor, judoka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1f3ee; --ink:#14282f; --muted:#52646a; --line:#c9d1cc;
+  --contour:#2f7f86; --belt:#7a4527; --sun:#d99a1c;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1c20; --ink:#e7ece8; --muted:#9db0b4; --line:#2a3d43;
+    --contour:#5fb3ba; --belt:#c98a5e; --sun:#e8b445; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1c20; --ink:#e7ece8; --muted:#9db0b4; --line:#2a3d43;
+  --contour:#5fb3ba; --belt:#c98a5e; --sun:#e8b445; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:inherit;text-decoration-color:var(--sun);text-underline-offset:.2em;text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:64rem;margin:0 auto;padding:0 1.25rem}
+
+header{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.map{position:absolute;right:-6%;top:0;width:min(60rem,120%);height:100%;opacity:.55;pointer-events:none}
+.map path{fill:none;stroke:var(--contour);stroke-width:1.4;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:0}
+@media (prefers-reduced-motion:no-preference){
+  .map path{stroke-dashoffset:1;animation:draw 2.4s ease-out forwards}
+  .map path:nth-child(2){animation-delay:.15s}.map path:nth-child(3){animation-delay:.3s}
+  .map path:nth-child(4){animation-delay:.45s}.map path:nth-child(5){animation-delay:.6s}.map path:nth-child(6){animation-delay:.75s}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero{position:relative;padding:clamp(4rem,14vw,9rem) 0 clamp(3rem,8vw,5.5rem)}
+h1{font:600 clamp(3rem,11vw,7.5rem)/.95 var(--serif);letter-spacing:-.02em;margin:0 0 1.5rem;max-width:11ch}
+.lead{font:400 clamp(1.25rem,3vw,1.7rem)/1.4 var(--serif);max-width:30ch;margin:0;color:var(--muted)}
+
+section{display:grid;gap:.75rem 3rem;padding:2.75rem 0;border-bottom:1px solid var(--line)}
+h2{font:600 1.1rem/1.3 var(--sans);margin:0;color:var(--muted)}
+section p{margin:0 0 1rem;max-width:62ch}
+section p:last-child{margin-bottom:0}
+@media (min-width:760px){section{grid-template-columns:12rem 1fr}}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:1.25rem}
+.facts li{padding-left:1rem;border-left:3px solid var(--contour)}
+.facts li.belt{border-color:var(--belt)}
+.facts li.sun{border-color:var(--sun)}
+.facts b{display:block;font:600 1.3rem/1.3 var(--serif)}
+.facts span{color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<header>
+  <svg class="map" viewBox="0 0 600 420" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <path pathLength="1" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+    <path pathLength="1" transform="translate(305 210) rotate(6) scale(.84) translate(-305 -210)" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+    <path pathLength="1" transform="translate(305 210) rotate(12) scale(.68) translate(-305 -210)" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+    <path pathLength="1" transform="translate(305 210) rotate(19) scale(.53) translate(-305 -210)" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+    <path pathLength="1" transform="translate(305 210) rotate(27) scale(.39) translate(-305 -210)" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+    <path pathLength="1" transform="translate(305 210) rotate(36) scale(.26) translate(-305 -210)" d="M60 220C70 120 190 60 300 70C420 80 540 140 550 230C560 320 440 360 320 350C190 340 50 320 60 220Z"/>
+  </svg>
+  <div class="wrap hero">
+    <h1>Sattibek Sadyk</h1>
+    <p class="lead">Geography student, UNT tutor and judoka in Astana.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about">
+    <h2>About</h2>
+    <div>
+      <p>I am a fourth-year Geography student at L.N. Gumilyov Eurasian National University in Astana. I was born on 30 January 2006 in Taldykorgan and changed five schools before moving to Astana, so I learned early how to adapt and start again.</p>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <div>
+      <p>I prepare graduating pupils to pass the Unified National Testing (UNT) and enroll in universities. In total I have taught about 100 pupils.</p>
+    </div>
+  </section>
+
+  <section id="judo">
+    <h2>Sport</h2>
+    <ul class="facts">
+      <li class="sun"><b>Silver medal, Asian championship</b><span>Judo</span></li>
+      <li class="belt"><b>Brown belt in judo</b><span>Many years of training in judo and hand-to-hand combat</span></li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="facts">
+      <li><b>L.N. Gumilyov Eurasian National University</b><span>Bachelor's degree in Geography, 4th year</span></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div>
+      <p><a href="tel:+77772526109">+7 777 252 6109</a></p>
+      <p>Astana, Kazakhstan</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Sattibek Sadyk</footer>
+</body>
+</html>
